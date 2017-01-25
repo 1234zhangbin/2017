@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	
+	<script src="js/jquery.js"></script>
+	<style type="text/css" media="screen">
+
+	*{padding:0;margin:0;}
+	.w_23{width:23px;}
+	.w_25{width:25px;}
+	.w_30{width:30px;}
+	.w_35{width:35px;}
+	.w_40{width:40px;}
+	.w_60{width:60px;}
+	.w_80{width:80px;}
+	.w_90{width:90px;}
+	.w_95{width:95px;}
+	.w_100{width:100px;}
+	.w_110{width:110px;}
+	.w_130{width:130px;}
+	.w_140{width:140px;}
+	.w_145{width:145px;}
+	.w_160{width:160px;}
+	.w_180{width:180px;}
+	.w_195{width:195px;}		
+	.w_200{width:200px;}	
+	.hw_2{width:210px;height:43px;padding-left:20px;padding-top:10px;}	
+	.w_230{width:230px;}	
+	.w_240{width:240px;}	
+	.w_300{width:300px;}
+	.w_310{width:310px;}
+	.w_305{width:305px;}
+	.w_320{width:320px;}
+	.w_400{width:400px;}	
+	.w_800{width:800px;}
+	.w_840{width:840px;}
+	.w_880{width:880px;}
+	.w_900{width:900px;}
+	.w_935{width:935px;}
+	
+	.w_920{width:920px;}
+	.w_970{width:970px;}
+	.w_1000{width:1000px;}
+	.w_1200{width:1200px;}
+	.w_1600{width:1600px;}
+	.h_10{height:10px;}
+	.h_15{height:15px;}
+    .h_20{height:20px;}
+    .h_22{height:22px;}
+    .h_21{height:21px;}
+    .h_25{height:25px;}
+    .h_35{height:35px;}
+    .h_40{height:40px;}
+    .h_43{height:43px;}
+    .h_45{height:45px;}
+    .hw_4{height:45px;width:100px;}
+    .h_49{height:49px;}
+    .h_50{height:50px;}
+    .h_55{height:55px;}   
+	.h_61{height:61px;}	
+	.h_70{height:70px;}
+	.h_75{height:75px;}	
+	.h_80{height:80px;}	
+	.h_90{height:90px;}	
+	.h_105{height:105px;}
+	.h_110{height:110px;}
+	.h_120{height:120px;}
+	.h_130{height:130px;}
+	.h_140{height:140px;}
+	.h_149{height:149px;}
+	.h_165{height:165px;}	
+	.h_170{height:170px;}
+	.h_195{height:195px;}				
+	.h_215{height:215px;}	
+	.h_460{height:460px;}
+	.h_515{height:515px;}		
+	.h_760{height:760px;}
+	.h_820{height:820px;}	
+	.wh_1{width:100px;height:49px;}
+	.wh_2{width:100px;height:50px;}
+   .wh_3{width:935px;height:49px;}
+	.b_1{border:1px solid red;}
+	.b_4{border:2px solid #01ff9f;}
+	.b_5{border-left:2px solid #cccccc;}
+	.b_6{border-left:2px solid #cccccc;border-right:2px solid #cccccc;}
+	.b_7{border-bottom:2px solid #cccccc;border-top:2px solid #cccccc;}
+	.b_2{border:1px solid #e2e2e2;}
+	.b_3{border-bottom:2px solid #e2e2e2;}
+	.fl{float:left;}
+    .p_0{padding:0px;}
+    .p_5{padding:5px;}
+    .pl_15{padding-left:15px;}	
+    .pl_16{padding-left:16px;}	
+	.pl_20{padding-left:20px;}			
+	.pl_34{padding-left:34px;}	
+	.pl_50{padding-left:50px;}
+	.pl_150{padding-left:150px;}
+	.pl_166{padding-left:166px;}
+	.plt_12{padding-left:17px;padding-top:12px;}
+    .pt_2{padding-top:2px;}
+    .pt_5{padding-top:5px;}
+	.pt_9{padding-top:9px;}
+	.pt_11{padding-top:11px;}
+	.pt_15{padding-top:15px;}
+	.pr_0{padding-right:0px;}
+	.mg_auto{margin:0 auto;}
+    .mt_-10{margin-top:-10px;}
+    .mt_11{margin-top:11px;}
+    .mt_15{margin-bottom:15px;}
+	.mt_18{margin-bottom:18px;}
+	.mt_20{margin-bottom:20px;}
+	.mt_0{margin-top:0px;}
+	.mt_5{margin-top:5px;}
+	.mt_9{margin-top:9px;}
+	.mt_10{margin-top:10px;}
+	.mt_15{margin-top:15px;}
+	.mt_16{margin-top:16px;}
+	.mt_21{margin-top:21px;}
+
+	.mt_23{margin-top:23px;}
+	.mt_30{margin-top:30px;}
+	.mt_35{margin-top:35px;}
+	.mt_50{margin-top:50px;}
+	.mt_-3{margin-top:-3px;}
+	.mt_-22{margin-top:-22px;}
+	.mt_-50{margin-top:-50px;}
+	.mt_60{margin-top:60px;}
+	.mt_140{margin-top:140px;}
+	.ml_-7{margin-left:-7px;}
+	.ml_-15{margin-left:-15px;}
+	.ml_-20{margin-left:-20px;}
+    .ml_-40{margin-left:-40px;}
+    .ml_5{margin-left:5px;}
+    .ml_10{margin-left:10px;}
+    .ml_15{margin-left:15px;}
+    .ml_16{margin-left:16px;}
+    .ml_20{margin-left:20px;}
+	.ml_21{margin-left:21px;}
+	.ml_25{margin-left:25px;}
+	.ml_30{margin-left:30px;}
+	.ml_35{margin-left:35px;}
+	.ml_40{margin-left:40px;}
+	.ml_50{margin-left:50px;}
+	.ml_60{margin-left:60px;}
+	.ml_80{margin-left:80px;}
+	.ml_90{margin-left:90px;}
+	.ml_170{margin-left:170px;}
+	.ml_455{margin-left:455px;}
+	.mr_180{margin-right:180px;}
+	.ml_0{margin-left:0px;}
+	.ml_230{margin-left:230px;}
+
+    .bac_1{background:url(images/cvb_02.png)repeat-x;}
+	.bac_2{background:#e2e2e2;}
+	.bac_3{background:#fff;}
+	.bac_4{background:#2faf7e;}
+	.bac_5{background:#66cc95;}
+	
+	.lh_61{line-height:61px;}
+	.p_24{padding-bottom: 24px;}
+
+	.fc_1{color:#2faf7e;;}
+	.fc_5{color:#e2e2e2;}
+	.fc_2{color:#fff;}
+	.fc_4{color:#111;}
+	.fc_3{color:#ffffff;}
+
+	.ft_20{font-size:20px;}
+	.ft_16{font-size:16px;}
+    .ft{font-weight:700;}
+   .ft_17{font-size:17px;}
+   .h3{text-decoration:underline;color:#e2e2e2;}
+   .divul li{float:left;list-style:none;border:1px;margin-left:20px;height:60px;line-height:60px;}
+   .divul li:hover{background:grey;height:60px;cursor:pointer;}
+   .divul li a:hover{color:#99cccc;cursor:pointer;}   
+   .bianse ul li{float:left;list-style:none;width:100px;height:49px;;text-align:center;display:block;}
+   .bianse ul li a:hover{text-decoration:none;}
+   .bianse ul li :hover{color:#2faf7e;;cursor:pointer;border:5px solid:#2faf7e;; border-bottom:5px solid:#2faf7e;}
+   .zxc li {list-style:none;float:left;width:100px;height:49px;display:inline-block;}
+   .zxc li a:hover{text-decoration:none;color:#2faf7e;cursor:pointer;}
+   .lanmu2 li {list-style:none;float:left;width:35px;height:25px;line-height:25px;display:inline-block;margin-left:15px;}
+   .lanmu2 li a{padding-top:10px;}
+   .lanmu2 li a:hover{text-decoration:none;color:#2faf7e;cursor:pointer;}  
+   .lanmu3 div a{text-decoration:none;width:38px;height:25px;line-height:25px;display:inline-block; float:left;margin-left:20px;padding-left:3px;font-size:14px;}
+   .lanmu3 div a:hover{text-decoration:none;color:#2faf7e;cursor:pointer;border:2px solid    #2faf7e;}   
+   .lanmu3 div{margin-top:3px;}
+   .lanmu8 div a{text-decoration:none;width:38px;height:25px;line-height:25px;display:inline-block; float:left;margin-left:20px;padding-left:3px;font-size:14px;}
+   .lanmu8 div a:hover{text-decoration:none;color:#2faf7e;cursor:pointer;border:2px solid    #2faf7e;}
+   .lanmu4 li {list-style:none;float:left;line-height:35px;height:35px;width:100px;        display:inline-block;border:1px solid #e2e2e2;padding-left:20px;}
+   .lanmu4 li a:hover{text-decoration:none;color:#2faf7e;cursor:pointer;}
+   .lanmu4 li:hover{border-top:2px solid #2faf7e;c;border-bottom:2px solid #fff;}
+   .lanmu5 li {list-style:none;}
+   .li3 p {color:#ccc;}
+   .ff{width:100px;height:49px;display:inline-block;}   
+   .ff:hover{color:#2faf7e;cursor:pointer;border-bottom: solid 2px #2faf7e;}      	
+   .sectionul li {list-style:none;}
+   .sectionul li a:hover{list-style:none;color:#2faf7e;text-decoration:none;cursor:pointer;}
+   .aa{width:170px; height:23px;border:solid 1px #e2e2e2;}
+   .active a {color:#2faf7e;}  
+   .active3 a{color:#2faf7e;text-decoration:none;line-height:35px;height:35px;width:100px;display:inline-block;border-top:2px solid #2faf7e;border-bottom:2px solid #fff;margin-left:-20px;padding-left:17px;} 
+   .active8 a{color:#2faf7e;text-decoration:none;background:#339966;height:25px;width:25px;display:inline-block;padding-left:7px;}
+  .activep a{height:50px;width:100px;display:inline-block;border-bottom:2px solid #2faf7e;}   
+  .activep a{color:#2faf7e;}
+   .active2 a {width:35px;height:20px;border:2px solid #2faf7e;color:#2faf7e;text-decoration:none;display:inline-block;}
+   .active6:hover{list-style:none;cursor:pointer;border:2px solid #2faf7e;}
+   .ai li{list-style:none;margin-left:5px;background:#ffffff;width:25px;height:25px;}
+   .ai li a:hover{color:#fff;text-decoration:none;}
+   .ai li:hover{background:#339966;cursor:pointer;} 
+   .ai li a{margin-left:7px;line-height:25px;color:#cccccc;}
+   .as li a{color:#cccccc;} 
+   .as li{list-style:none;margin-top:10px;}
+   .as li a:hover{cursor:pointer;color:#2faf7e;}
+   .az img:hover{cursor:pointer;border:1px solid:#2faf7e;} 
+   .active5 p {color:#66ccff;}
+   .lanmu6 a :hover{cursor:pointer;color:#2faf7e;}
+   .lanmu7 a div:hover{cursor:pointer;color:#2faf7e;}
+   .tupian a :hover{cursor:pointer;color:#2faf7e;}
+  .dpn{display:none;}
+			
+	</style>
+</head> 
+<body>
+<header class="h_61 bac_1">
+<div class="w_1200 h_61 mg_auto">
+	<div class="w_900 h_61 fl">
+		<div class="fl"><img  src="images/kaoshi_02.png" alt=""><img class="ml_10" src="images/_03.png" alt=""></div>
+		<div class="fl ml_15">
+			<ul class="divul">
+				<li><a class="fc_3">首页</a></li>
+				<li><a class="fc_3">公立私立学校</a></li>
+				<li><a class="fc_3">名师网校</a></li>
+				<li><a class="fc_3">北外网络学校</a></li>
+				<li><a class="fc_3">网络培训学校</a></li>
+				<li><a class="fc_3">下载App</a></li>
+			</ul>
+		</div>
+	</div>	
+	<div class="w_300 h_61 fl lh_61 pr_0"><p class="pl_150"><span class="fc_2">欢迎您，</span>
+	<span class="fc_1">13800138000</span></p></div>
+</div>
+	</header>
+
+
+ <div class=" bac_2">
+	<div class="h_40 w_1200 mg_auto">
+	     <div class="h_40 w_1000 pt_9 fl">
+	     	<div class="ft">以下为你展示“<span class="fc_1">学</span>”的搜索结果，共188个</div>
+	     </div>
+	     <div>
+	     <div class="fl h_40 w_200 pt_9 ml_-15"><input type="text" class="aa" placeholder="请输入课程。学校。老师。" />
+	     <div class="tupian w_23 h_21 fc_4 fl ml_170 mt_-22 bac_3"><a class="ml_5"><img class="position:absolute" src="images/kaoshi_10.png" alt="" ></a></div></div>	
+	     </div>
+	 </div>
+	</div>
+
+
+
+
+<!-- 中间内容 -->
+<section class="h_760 w_1200 mg_auto">
+<div class="h_760 w_230 fl">	
+	  <div class="h_215 w_210  mt_21 fl"style="position:absolute;margin-top:20px">
+	       <div class="h_43 w_210 bac_4"><h4 class="plt_12 fc_2 ft">全部</h4></div>
+	       <div class="h_172 w_210 bac_2">
+	       <div class="hg">
+	       	<ul class="sectionul p_0 ">		     
+	       		<li><div class="hw_2"><a class="fc_4 ft_16 ft">课程 &nbsp;( &nbsp;108 &nbsp;) &nbsp;</a></div></li>
+	   			<li class="active"><div class="hw_2 ft_16 ft"><a class="fc_4 ft_16">教师 &nbsp;( &nbsp;80 &nbsp;) &nbsp;</a></div></li>
+				<li><div class="hw_2"><a class="fc_4 ft_16 ft">学校&nbsp;( &nbsp;40 &nbsp;) &nbsp;</a></div></li>
+				<li><div class="hw_2"><a class="fc_4 ft_16 ft">机构 &nbsp;( &nbsp;20 &nbsp;) &nbsp;</a></div></li>			
+			</ul>
+		</div>
+	       </div>	      
+      </div>
+
+<div class="w_970 h_760 fl ml_230">		
+	<div class="h_149 w_970 mg_auto mt_21">
+		<div class="wh_3 mg_auto b_3">
+			<div>
+				<ul class="zxc ml_-40 mt_-10 vg">
+					<li class="activep "><a class="fc_4 ff pt_15 pl_16 ft_17 ml_40 ft">名师网校</a></li>
+					<li class="w_100 h_49 ml_80"><a class="fc_4 ff pt_15 pl_16 ft_17 ft">网络机构</a></li>
+				</ul>
+			</div> 
+		</div>
+	<div class="w_935 h_50 mg_auto b_3">
+		    <div><h class="w_60 h_50 fl  pt_15 pl_15 fl_16 ft fs_18">年级 :</h></div>
+		    <div class="w_400 h_40 fl mt_9 pt_2 lanmu3 ttt">	   
+		    <div class="vb active2"><a class="fl_16 fc_4 ft">全部</a></div>
+			<div ><a class="fl_16 fc_4 ft">小学</a></div>
+			<div ><a class="fl_16 fc_4 ft">初中</a></div>
+			<div ><a class="fl_16 fc_4 ft">高中</a></div>
+		    </div>
+ 	</div>
+ 	<div class="w_935 h_50 mg_auto b_3 ">
+		<div ><h class="w_60 h_50 fl pt_15 pl_15 fl_16 ft fs_18">科目 :</h></div>
+		<div class="w_840 h_25 fl mt_10 pt_2 lanmu8 tt">
+		    <div class="vb active2"><a class="fl_16 fc_4 ft">全部</a></div>
+			<div ><a class="fl_16 fc_4 ft">语文</a></div>
+			<div ><a class="fl_16 fc_4 ft">数学</a></div>
+			<div ><a class="fl_16 fc_4 ft">英语</a></div>
+			<div ><a class="fl_16 fc_4 ft">物理</a></div>
+			<div ><a class="fl_16 fc_4 ft">化学</a></div>
+			<div ><a class="fl_16 fc_4 ft">生物</a></div>
+			<div ><a class="fl_16 fc_4 ft">政治</a></div>
+ 			<div ><a class="fl_16 fc_4 ft">地理</a></div>
+			<div ><a class="fl_16 fc_4 ft">国学</a></div>
+			<div ><a class="fl_16 fc_4 ft">作文</a></div>
+		</div>
+		</div>
+	    
+		<div class="w_970 h_35 mg_auto mt_21">
+			<ul class="zb1 lanmu4" style="margin-left:15px;">
+				<li id="bianhua1" class="active3" ><a class="fc_4 ft">综合排序</a></li>
+				<li id="bianhua2"><a class="fc_4 ft">人气最高</a></li>
+				<li id="bianhua3"><a class="fc_4 ft">排名最高</a></li>
+			</ul>		
+		</div>
+
+		<div class=" w_970 h_460 mg_auto">
+		<div  id="biantu1" class="zb">
+			<div class="active6 w_300 h_165 mt_30 ml_16 fl">
+			<div class="fl">
+				<img class="mt_10 ml_10" src="images/kaoshi_21.png" alt="">
+				<p style="width:60px;height:20px;margin-left:40px;margin-top: 4px;font-size:14px;font-weight;font-weight:700;">王强老师</p>
+			</div>             
+				<div class="w_130 h_110 fl mt_10 ml_25">
+					<ul class="lanmu5 mt_5">
+						<li><h4 style="font-size:14px;font-weight:700;">语文特级教师</h4></li>
+						<li ><img style="margin-top:-20px;" src="images/cvb_03.png" alt=""></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">教龄:10年</p></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">已有168学生</p></li>
+						<li class="active5"><p  style="font-weight:700;margin-top:-7px;">口语 听力 翻译</p></li>
+						<li style="width:75px;height:25px;margin-top:-7px"class="bac_4"><p class="pt_2 lanmu6"><a class="fc_2">报名TA的课</a></p></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="active6 w_300 h_165 mt_30 ml_16 fl">
+			<div class="fl">
+				<img class="mt_10 ml_20" src="images/kaoshi_35.png" alt="">
+				<p style="width:60px;height:20px;margin-left:35px;margin-top: 4px;font-size:14px;font-weight;font-weight:700;">李向老师</p>
+			</div>             
+				<div class="w_130 h_110 fl mt_10 ml_30">
+					<ul class="lanmu5 mt_5">
+						<li><h4 style="font-size:14px;font-weight:700;">英语特级教师</h4></li>
+						<li ><img style="margin-top:-20px;" src="images/cvb_03.png" alt=""></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">教龄:10年</p></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">已有168学生</p></li>
+						<li class="active5"><p  style="font-weight:700;margin-top:-7px;">口语 听力 翻译</p></li>
+						<li style="width:75px;height:25px;margin-top:-7px"class="bac_4"><p class="pt_2 lanmu6"><a class="fc_2">报名TA的课</a></p></li>
+					</ul>
+				</div>
+				</div>
+			</div> 
+
+               <div id="biantu2" class="dpn zb">
+				<div class="active6 w_300 h_165 mt_30 ml_16 fl">
+			<div class="fl">
+				<img class="mt_10 ml_10" src="images/kaoshi_32.png" alt="">
+				<p style="width:75px;height:20px;margin-left:40px;margin-top: 4px;font-size:14px;font-weight;font-weight:700;">吴孝林老师</p>
+			</div>             
+				<div class="w_130 h_110 fl mt_10 ml_25">
+					<ul class="lanmu5 mt_5">
+						<li><h4 style="font-size:14px;font-weight:700;">英语特级教师</h4></li>
+						<li ><img style="margin-top:-20px;" src="images/cvb_03.png" alt=""></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">教龄:10年</p></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">已有168学生</p></li>
+						<li class="active5"><p  style="font-weight:700;margin-top:-7px;">口语 听力 翻译</p></li>
+						<li style="width:75px;height:25px;margin-top:-7px"class="bac_4"><p class="pt_2 lanmu6"><a class="fc_2 ">报名TA的课</a></p></li>
+					</ul>
+				</div>
+				</div>
+
+				<div class="active6 w_300 h_165 mt_21 ml_16 fl">
+			<div class="fl">
+				<img class="mt_10 ml_10" src="images/kaoshi_21.png" alt="">
+				<p style="width:70px;height:20px;margin-left:40px;margin-top: 4px;font-size:14px;font-weight;font-weight:700;">王强老师</p>
+			</div>             
+				<div class="w_130 h_110 fl mt_10 ml_25">
+					<ul class="lanmu5 mt_5">
+						<li><h4 style="font-size:14px;font-weight:700;">语文特级教师</h4></li>
+						<li ><img style="margin-top:-20px;" src="images/cvb_03.png" alt=""></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">教龄:10年</p></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">已有168学生</p></li>
+						<li class="active5"><p  style="font-weight:700;margin-top:-7px;">口语 听力 翻译</p></li>
+						<li style="width:75px;height:25px;margin-top:-7px"class="bac_4"><p class="pt_2 lanmu6"><a class="fc_2 ">报名TA的课</a></p></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+
+              <div id="biantu3" class="dpn zb">
+			<div class="active6 w_300 h_165 mt_21 ml_16 fl">
+			<div class="fl">
+				<img class="mt_10 ml_20" src="images/kaoshi_35.png" alt="">
+				<p style="width:60px;height:20px;margin-left:35px;margin-top: 4px;font-size:14px;font-weight;font-weight:700;">李向老师</p>
+			</div>             
+				<div class="w_130 h_110 fl mt_10 ml_30">
+					<ul class="lanmu5 mt_5">
+						<li><h4 style="font-size:14px;font-weight:700;">英语特级教师</h4></li>
+						<li ><img style="margin-top:-20px;" src="images/cvb_03.png" alt=""></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">教龄:10年</p></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">已有168学生</p></li>
+						<li class="active5"><p  style="font-weight:700;margin-top:-7px;">口语 听力 翻译</p></li>
+						<li style="width:75px;height:25px;margin-top:-7px"class="bac_4"><p class="pt_2 lanmu6"><a class="fc_2 ">报名TA的课</a></p></li>
+					</ul>
+				</div>
+				</div>
+
+
+				<div class="active6 w_300 h_165 mt_21 ml_16 fl">
+			<div class="fl">
+				<img class="mt_10 ml_10" src="images/kaoshi_32.png" alt="">
+				<p style="width:75px;height:20px;margin-left:40px;margin-top: 4px;font-size:14px;font-weight;font-weight:700;">吴孝林老师</p>
+			</div>             
+				<div class="w_130 h_110 fl mt_10 ml_25">
+					<ul class="lanmu5 mt_5">
+						<li><h4 style="font-size:14px;font-weight:700;">英语特级教师</h4></li>
+						<li ><img style="margin-top:-20px;" src="images/cvb_03.png" alt=""></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">教龄:10年</p></li>
+						<li class="li3"><p  style="font-weight:700;margin-top:-7px;">已有168学生</p></li>
+						<li class="active5"><p  style="font-weight:700;margin-top:-7px;">口语 听力 翻译</p></li>
+						<li style="width:75px;height:25px;margin-top:-7px"class="bac_4"><p class="pt_2 lanmu6"><a class="fc_2 ">报名TA的课</a></p></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="w_305 h_70 mg_auto ">
+			<ul class="ai mt_20 bac_3">
+				<li class=" w_25 h_25 fl " id="zx1"><a class="fc_2">1</a></li>	 
+				<li class="w_25 h_25 fl " id="zx2"><a>2</a></li>
+				<li class="w_25 h_25 fl active8"  id="zx3"><a>3</a></li>
+				<li class=" w_25 h_25 fl " id="zx4"><a>4</a></li>
+				<li class="w_25 h_25 fl" id="zx5"><a>5</a></li>
+				<li class="w_25 h_25 fl" id="zx6"><a>...</a></li>
+				<li class=" w_25 h_25 fl" id="zx7"><a>&nbsp;>&nbsp;</a></li>
+			</ul>
+		</div>
+     </div> 
+</section>
+<!-- 中间内容 -->
+
+
+	<div class="w_1200 h_140 mg_auto b_7">
+	     <div class="lanmu7 w_240 h_140 fl">
+	     <a>
+		    <div class="fl">
+		    	<img class="lanmu7 mt_35" src="images/kaoshi_40.png" alt="">			
+			</div>	
+			<div class="fl mt_50  ml_10">			
+				<div class="ft_20 fc_4 ft">免费试听</div>
+				<div class="fc_4 ">满意后再报课</div>
+			</div>
+			<a>
+	    </div>
+	    	     <div class="lanmu7 w_240 h_140 fl">
+	    	     <a>
+		    <div class="fl">
+		    <img class="mt_35" src="images/kaoshi_43.png" alt="">			
+			</div>	
+			<div class="fl mt_50  ml_10">			
+				<div class="ft_20 fc_4 ft">无忧退货</div>
+				<div class="fc_4 ">24小时到账</div>
+			</div>
+		</a>
+	    </div>
+	    	     <div class="lanmu7 w_240 h_140 fl">
+	    	     <a>
+		    <div class="fl">
+		    <img class="mt_35" src="images/kaoshi_46.png" alt="">			
+			</div>	
+			<div class="fl mt_50  ml_10">			
+				<div class="ft_20 fc_4 ft">零风险</div>
+				<div class="fc_4"_>线下实体学校，品质保障</div>
+			</div>
+		</a>
+	    </div>
+	    	     <div class="lanmu7 w_240 h_140 fl">
+	    	     <a>
+		    <div class="fl">
+		    <img class="mt_35" src="images/kaoshi_49.png" alt="">			
+			</div>	
+			<div class="fl mt_50  ml_10">			
+				<div class="ft_20 fc_4 ft">金牌教学</div>
+				<div class="fc_4">科学规划，高效提分</div>
+			</div>
+		</a>
+	    </div>
+	    	     <div class="lanmu7 w_210 h_140 fl">
+	    	     <a>
+		    <div class="fl">
+		    <img class="mt_35" src="images/kaoshi_51.png" alt="">			
+			</div>	
+			<div class="fl mt_50  ml_10">			
+				<div class="ft_20 fc_4 ft">优质服务</div>
+				<div class="fc_4">全程监督，及时反馈</div>
+			</div>
+		</a>
+	    </div>
+
+
+	    <div class="w_1200 h_195 mt_140">
+	    	<div class="w_310 h_110 mt_30 fl">
+	    	<div class="w_295 h_45">
+	    <div class="w_110 h_45 fl ">
+	    		<img src="images/kaoshi_59.png" alt="">
+	    </div>
+	    <div class="w_195 h_45 b_5 fl">
+	    	<img class="ml_10" src="images/fgh_07.png" alt="">
+	    </div>
+
+	</div>
+	    <div class="w_200 h_61 mt_60 ml_35">
+	    	<img class="mt_-50" src="images/uio_11.png" alt="">
+	    </div>
+	        </div>
+	        <div class="w_140 h_105 b_6 fl mt_35">
+	        	<div class="w_90 h_20 ml_25 fl"><h4 class="ft mt_0">关于我们</h4></div>
+	        	<ul class="as mt_30 ml_25">
+	        		<li><a><h14>快易学</h14></a></li>
+	        	<li><a><h14>意见反馈</h14></a></li>
+	        	<li><a><h14>媒体报道</h14></a></li>
+	        	<ul>        
+	        </div>
+	        <div class="w_140 h_105 b_6 fl mt_35">
+	        	<div class="w_90 h_20 ml_25 fl"><h4 class="ft mt_0">更多帮助</h4></div>
+	        	<ul class="as mt_30 ml_25">
+	        		<li><a><h14>教师操作指南</h14></a></li>
+	        	<li><a>学生操作指引</a></li>
+	        	<li><a><h14>常见问题</h14></a></li>
+	        	<ul>        
+	        </div>
+	         <div class="az w_140 h_105 b_6 fl mt_35">
+	        	<div class="w_80 h_80 ml_25"><img src="images/kaoshi_65.png" alt=""></div>
+	        	<div class="w_95 h_15 mg_auto mt_9 fc_5">教师端App下载</div>
+	        </div>
+	        <div class="az w_140 h_105 b_6 fl mt_35">
+	        	<div class="w_80 h_80 ml_25"><img src="images/kaoshi_65.png" alt=""></div>
+	        	<div class="w_95 h_15 mg_auto mt_9 fc_5">学生端App下载</div>
+	        </div>
+	        <div class="az w_140 h_105 b_6 fl mt_35">
+	        	<div class="w_80 h_80 ml_25"><img src="images/kaoshi_65.png" alt=""></div>
+	        	<div class="w_95 h_15 mg_auto mt_9 fc_5">家长端App下载</div>
+	        </div>
+
+
+	        <div class="fl" style="width:160px;height:45px;margin-top:63px;margin-left:14px;">
+	        	<div class="w_40 h_40 fl"><img  src="images/kaoshi_79.png" alt=""></div>
+	        	<div class="w_40 h_40 fl"><img class="ml_20 mt_-10" src="images/kaoshi_72.png" alt=""></div>
+	        	<div class="w_40 h_40 fl"><img class="ml_35 mt_-3"src="images/kaoshi_76.png" alt=""></div>
+	        </div>
+	    </div>
+
+
+	    <div class="w_1200 h_90">
+	    	<p class="w_400 h_20 mt_50 ml_455 fc_5 ft">
+	    		Copyright@复晟教投 快易学教育 版权所有 黔ICP备16002256
+	    	</p>
+	    </div>
+
+</body>
+</html>
+	<script>
+		$ (function(){
+			$(".zb1").find("li").click(function(){
+				var a=$(this).index();
+				$(".zb1").find("li").removeClass("active3");
+				$(".zb1").find("li").eq(a).addClass("active3");
+
+	             $(".zb").addClass("dpn")
+				$(".zb").eq(a).removeClass("dpn");});
+
+			$(".ai").find("li").click(function(){
+				var a=$(this).index();
+				$(".ai").find("li").removeClass("active8");
+				$(".ai").find("li").eq(a).addClass("active8");});
+	
+	       $(".ttt").find("div").click(function(){
+				var a=$(this).index();
+				$(".ttt").find("div").removeClass("active2");
+				$(".ttt").find("div").eq(a).addClass("active2");});
+
+
+	       $(".tt").find("div").click(function(){
+				var a=$(this).index();
+				$(".tt").find("div").removeClass("active2");
+				$(".tt").find("div").eq(a).addClass("active2");});
+
+	        $(".vg").find("li").click(function(){
+				var a=$(this).index();
+				$(".vg").find("li").removeClass("activep");
+				$(".vg").find("li").eq(a).addClass("activep");});
+
+
+             $(".hg").find("li").click(function(){
+				var a=$(this).index();
+				$(".hg").find("li").removeClass("active");
+				$(".hg").find("li").eq(a).addClass("active");});
+
+		});
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
